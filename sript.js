@@ -1,4 +1,4 @@
-
+alert("Le fichier JavaScript fonctionne !");
 /* =========================================
    1. CONNEXION À SUPABASE
 ========================================= */
