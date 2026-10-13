@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arche de l'Alliance : informations et inscriptions scolaires en ligne.">
+  <title>Arche de l'Alliance | Inscription scolaire</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#accueil" class="logo">
+      <span class="logo-icon">A</span>
+      <span>ARCHE DE L'ALLIANCE
+        <small>ÉDUCATION • AVENIR • EXCELLENCE</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Ouvrir le menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">Notre école</a>
+      <a href="#avantages">Nos valeurs</a>
+      <a href="#inscription" class="nav-button">Inscrire un élève</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <span class="eyebrow">BIENVENUE DANS NOTRE ÉCOLE</span>
+        <h1>Construisons ensemble <span>l'avenir</span> de vos enfants.</h1>
+        <p>
+          À l'Arche de l'Alliance, nous accompagnons chaque élève
+          vers la connaissance, la discipline et la réussite.
+        </p>
+        <a href="#inscription" class="btn btn-gold">
+          Commencer l'inscription ↗
+        </a>
+        <div class="hero-note">✦ L'éducation, notre engagement pour demain.</div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-symbol">✦</div>
+        <p class="hero-quote">
+          « Chaque enfant mérite une chance de grandir,
+          d'apprendre et de réussir. »
+        </p>
+        <div class="hero-line"></div>
+        <p class="hero-signature">ARCHE DE L'ALLIANCE</p>
+      </div>
+    </section>
+
+    <section class="intro section" id="apropos">
+      <div>
+        <span class="eyebrow">NOTRE MISSION</span>
+        <h2>Une école pour apprendre et grandir.</h2>
+      </div>
+      <p>
+        Nous voulons offrir aux élèves un environnement favorable
+        à l'apprentissage, au respect, à la responsabilité et
+        au développement de leurs talents.
+      </p>
+    </section>
+
+    <section class="values section" id="avantages">
+      <div class="section-heading">
+        <span class="eyebrow">NOS ENGAGEMENTS</span>
+        <h2>Les valeurs qui nous guident</h2>
+      </div>
+
+      <div class="value-grid">
+        <article class="value-card">
+          <div class="value-icon">01</div>
+          <h3>Excellence</h3>
+          <p>Encourager chaque élève à apprendre et à donner le meilleur de lui-même.</p>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon">02</div>
+          <h3>Discipline</h3>
+          <p>Développer le respect, le sens des responsabilités et la ponctualité.</p>
+        </article>
+
+        <article class="value-card">
+          <div class="value-icon">03</div>
+          <h3>Accompagnement</h3>
+          <p>Favoriser l'épanouissement et la progression de chaque enfant.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="registration section" id="inscription">
+      <div class="form-intro">
+        <span class="eyebrow">ADMISSIONS SCOLAIRES</span>
+        <h2>Inscrivez votre enfant</h2>
+        <p>
+          Remplissez les informations ci-dessous pour préparer
+          une demande d'inscription.
+        </p>
+        <div class="form-tip">
+          <span>✓</span>
+          <div>
+            <strong>Simple et rapide</strong>
+            <p>Préparez les informations de l'élève et de son parent.</p>
+          </div>
+        </div>
+        <div class="form-tip">
+          <span>✓</span>
+          <div>
+            <strong>Demande à confirmer</strong>
+            <p>L'admission définitive doit être confirmée par l'école.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="registrationForm" class="registration-form">
+        <div class="form-heading">
+          <h3>Formulaire d'inscription</h3>
+          <p>Les champs marqués d'un * sont obligatoires.</p>
+        </div>
+
+        <h4>01 — Informations sur l'élève</h4>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="studentName">Nom complet de l'élève *</label>
+            <input id="studentName" name="studentName"
+              type="text" autocomplete="name"
+              placeholder="Nom et postnom" required maxlength="100">
+          </div>
+
+          <div class="field">
+            <label for="birthDate">Date de naissance *</label>
+            <input id="birthDate" name="birthDate"
+              type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="gender">Sexe *</label>
+            <select id="gender" name="gender" required>
+              <option value="">Choisir</option>
+              <option value="Masculin">Masculin</option>
+              <option value="Féminin">Féminin</option>
+              <option value="Non précisé">Préfère ne pas préciser</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="classLevel">Classe demandée *</label>
+            <select id="classLevel" name="classLevel" required>
+              <option value="">Choisir une classe</option>
+              <option>Maternelle</option>
+              <option>1re primaire</option>
+              <option>2e primaire</option>
+              <option>3e primaire</option>
+              <option>4e primaire</option>
+              <option>5e primaire</option>
+              <option>6e primaire</option>
+              <option>1re secondaire</option>
+              <option>2e secondaire</option>
+              <option>3e secondaire</option>
+              <option>4e secondaire</option>
+              <option>5e secondaire</option>
+              <option>6e secondaire</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="schoolYear">Année scolaire *</label>
+            <select id="schoolYear" name="schoolYear" required>
+              <option value="">Choisir</option>
+              <option value="2026-2027">2026–2027</option>
+              <option value="2027-2028">2027–2028</option>
+            </select>
+          </div>
+        </div>
+
+        <h4>02 — Informations sur le parent ou tuteur</h4>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="parentName">Nom complet du parent *</label>
+            <input id="parentName" name="parentName"
+              type="text" placeholder="Nom du parent ou tuteur"
+              required maxlength="100">
+          </div>
+
+          <div class="field">
+            <label for="relationship">Lien avec l'élève *</label>
+            <select id="relationship" name="relationship" required>
+              <option value="">Choisir</option>
+              <option value="Père">Père</option>
+              <option value="Mère">Mère</option>
+              <option value="Tuteur">Tuteur / tutrice</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="phone">Téléphone du parent *</label>
+            <input id="phone" name="phone" type="tel"
+              autocomplete="tel" placeholder="+243..."
+              required maxlength="25">
+          </div>
+
+          <div class="field">
+            <label for="email">Adresse e-mail</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" placeholder="exemple@email.com">
+          </div>
+
+          <div class="field full-width">
+            <label for="address">Adresse de résidence *</label>
+            <input id="address" name="address" type="text"
+              autocomplete="street-address"
+              placeholder="Commune, quartier, avenue..."
+              required maxlength="200">
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span>Je confirme que les informations fournies sont exactes
+            et j'accepte qu'elles soient utilisées pour traiter
+            cette demande d'inscription. *</span>
+        </label>
+
+        <button class="btn btn-submit" type="submit">
+          Envoyer ma demande <span>→</span>
+        </button>
+
+        <div id="formMessage" class="form-message"
+          role="status" aria-live="polite" hidden></div>
+
+        <p class="privacy-note">
+          Démonstration : ce formulaire n'envoie pas encore
+          les données à l'administration de l'école.
+        </p>
+      </form>
+    </section>
+
+    <section class="contact section">
+      <span class="eyebrow">RESTONS EN CONTACT</span>
+      <h2>Une question sur les admissions ?</h2>
+      <p>Contactez l'administration de l'Arche de l'Alliance.</p>
+      <p class="contact-placeholder">
+        Téléphone : à compléter · Adresse : à compléter
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#accueil" class="footer-logo">ARCHE DE L'ALLIANCE</a>
+    <p>© <span id="currentYear"></span> Arche de l'Alliance. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
