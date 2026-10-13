@@ -4,7 +4,7 @@
 ========================================= */
 
 const SUPABASE_URL = "https://zijiajoriigxajihbgvy.supabase.co";
-const SUPABASE_KEY = "COLLE_ICI_TA_CLE_PUBLIQUE_SUPABASE";
+const SUPABASE_KEY = "sb_publishable_eJriqMQ_3dsk03JX0XpIrA_RDp22GoX";
 
 if (!window.supabase) {
   throw new Error(
