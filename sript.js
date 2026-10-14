@@ -3,7 +3,7 @@ alert("Le fichier JavaScript fonctionne !");
    1. CONNEXION À SUPABASE
 ========================================= */
 
-const SUPABASE_URL = "https://zijiajoriigxajihbgvy.supabase.co";
+const SUPABASE_URL = "https://https://zijiajoriigxajihbgvy.supabase.co";
 const SUPABASE_KEY = "sb_publishable_eJriqMQ_3dsk03JX0XpIrA_RDp22GoX";
 
 if (!window.supabase) {
